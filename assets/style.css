@@ -1,79 +1,83 @@
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background-color: #0a0a0a;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
+/* ----------- BASE LAYOUT ----------- */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
 
-    h2 {
-      margin-top: 3rem;
-      font-size: 1.5rem;
-    }
+h2 {
+  margin-top: 3rem;
+  font-size: clamp(1.25rem, 4vw, 2rem);
+}
 
-    .iframe-box {
-      max-width: 100%;
-      overflow-x: auto;
-      margin: 1rem auto;
-    }
+/* ----------- PINTEREST ----------- */
+.iframe-box {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1rem auto;
+}
 
-    .gumroad-button {
-      display: inline-block;
-      background-color: #ffffff10;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      margin: 2rem auto 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+/* ----------- GUMROAD MAIN BUTTON ----------- */
+.gumroad-button {
+  display: inline-block;
+  background-color: #ffffff10;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem auto 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.gumroad-button:hover {
+  background-color: #ffffff20;
+}
 
-    .gumroad-button:hover {
-      background-color: #ffffff20;
-    }
+/* ----------- GUMROAD EMBED GRID (non-carousel) ----------- */
+.pack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.pack-grid > div {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+.gumroad-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 150%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.gumroad-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-    .pack-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 1rem;
-    }
+/* ----------- FOOTER ----------- */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
 
-    .pack-grid > div {
-      flex: 1 1 300px;
-      max-width: 400px;
-    }
-
-    .gumroad-embed {
-      position: relative;
-      width: 100%;
-      padding-top: 150%;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .gumroad-embed iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      opacity: 0.6;
-    }
+/* ----------- CAROUSEL 6 PACK ----------- */
 .carousel {
   overflow: hidden;
   width: 100%;
@@ -85,30 +89,10 @@
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll 32s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .carousel-track img {
   height: auto;
   width: 280px;
-  margin-right: 16px;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-.carousel-track img:hover {
-  transform: scale(1.06);
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@media (max-width: 600px) {
-  .carousel-track img {
-    width: 220px;
-    margin-right: 12px;
-  }
-}
-
+  margin-right: 16
