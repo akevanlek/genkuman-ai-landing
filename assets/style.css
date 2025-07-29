@@ -32,6 +32,12 @@ p {
   margin-bottom: 1.5rem;
 }
 
+iframe {
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+
 /* ✅ กลุ่มเดียวพอ */
 .gumroad-box {
   margin-top: 2rem;
