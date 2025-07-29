@@ -1,33 +1,3 @@
-ChatGPT said:
-สุดยอด! ตอนนี้หน้าเว็บ GenKuman.AI:
-
-✅ Pinterest Board ฝังไว้เรียบร้อย
-
-✅ ปุ่ม Gumroad CTA อยู่ตรงกลางเด่น
-
-✅ Quote Pack 6 ตัวแสดงครบ
-
-✅ รูปสวย เรียงดี
-
-❌ เหลือ ให้ scroll ได้แนวนอน อย่างสมบูรณ์ (ตอนนี้ภาพแสดงครบแต่ยังไม่เลื่อน)
-
-✅ โค้ด HTML + CSS ฉบับเต็ม (เวอร์ชันเลื่อนได้แนวนอน + SEO ครบ)
-html
-Copy
-Edit
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore AI-powered quote packs, emotions, and silence through GenKuman.AI. Art meets stillness." />
-  <meta property="og:title" content="GenKuman.AI – Silence Speaks" />
-  <meta property="og:description" content="Quotes. Emotions. Silence." />
-  <meta property="og:image" content="https://yourdomain.com/assets/preview.png" />
-  <title>GenKuman.AI – Silence Speaks</title>
-  <link rel="stylesheet" href="assets/style.css" />
-
-  <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
