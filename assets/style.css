@@ -1,97 +1,76 @@
-/* assets/style.css */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  background: #0d0d0d;
-  color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-}
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-.container {
-  max-width: 720px;
-  padding: 2rem;
-  text-align: center;
-}
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.3rem;
-}
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+    }
 
-p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
+    .iframe-box {
+      max-width: 100%;
+      overflow-x: auto;
+      margin: 1rem auto;
+    }
 
-.iframe-box iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-}
+    .gumroad-button {
+      display: inline-block;
+      background-color: #ffffff10;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin: 2rem auto 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-iframe {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  margin-bottom: 2rem;
-  background: transparent;
-}
+    .gumroad-button:hover {
+      background-color: #ffffff20;
+    }
 
+    .pack-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
 
-.gumroad-box h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
+    .pack-grid > div {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
 
+    .gumroad-embed {
+      position: relative;
+      width: 100%;
+      padding-top: 150%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
 
+    .gumroad-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
-.gumroad-button {
-  background: linear-gradient(135deg, #ffffff, #eaeaea);
-  color: #000000;
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
-  font-weight: 700;
-  border-radius: 12px;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s ease;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
-}
-
-.gumroad-button:hover {
-  background: #ffd369;
-  color: #000;
-  transform: translateY(-2px);
-}
-.gumroad-box {
-  margin-top: 2.5rem;
-}
-
-.pack-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .gumroad-button {
-    width: 100%;
-    font-size: 1rem;
-  }
-  
-  .pack-grid {
-    grid-template-columns: 1fr;
-  }
-}
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
