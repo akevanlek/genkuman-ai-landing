@@ -1,16 +1,94 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Explore AI-powered quote packs, emotions, and silence through GenKuman.AI. Art meets stillness." />
-<meta property="og:title" content="GenKuman.AI – Silence Speaks" />
-<meta property="og:description" content="Quotes. Emotions. Silence." />
-<meta property="og:image" content="https://yourdomain.com/assets/preview.png" />
+  <meta property="og:title" content="GenKuman.AI – Silence Speaks" />
+  <meta property="og:description" content="Quotes. Emotions. Silence." />
+  <meta property="og:image" content="https://yourdomain.com/assets/preview.png" />
 
   <title>GenKuman.AI – Silence Speaks</title>
   <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+    }
+
+    .iframe-box {
+      max-width: 100%;
+      overflow-x: auto;
+      margin: 1rem auto;
+    }
+
+    .gumroad-button {
+      display: inline-block;
+      background-color: #ffffff10;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin: 2rem auto 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .gumroad-button:hover {
+      background-color: #ffffff20;
+    }
+
+    .pack-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .pack-grid > div {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .gumroad-embed {
+      position: relative;
+      width: 100%;
+      padding-top: 150%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .gumroad-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -20,49 +98,41 @@
     <h2>Explore our Pinterest Board</h2>
     <div class="iframe-box">
       <a data-pin-do="embedBoard"
-         data-pin-board-width="500"
+         data-pin-board-width="900"
          data-pin-scale-height="240"
          data-pin-scale-width="80"
          href="https://www.pinterest.com/genkuman/buy-ai-quote-packs-calm-love/">
       </a>
     </div>
 
-   <div class="gumroad-box">
-  <!-- ปุ่มรวมหน้าร้าน -->
-  <a class="gumroad-button" href="https://genkuman.gumroad.com" target="_blank">
-    🛍️ Explore AI Quote Packs
-  </a>
+    <!-- รวมปุ่มและแพ็ค -->
+    <a class="gumroad-button" href="https://genkuman.gumroad.com" target="_blank">
+      🛍️ Explore AI Quote Packs
+    </a>
 
-<div class="pack-grid">
-  <div>
-    <h3>🌕 Astra – Love Quote Pack</h3>
-    <iframe 
-  src="https://genkuman.gumroad.com/l/love-quotes-pack-7?embedded=true" 
-  width="100%" 
-  height="420" 
-  frameborder="0" 
-  scrolling="no" 
-  allowtransparency="true">
-</iframe>
+    <div class="pack-grid">
+      <div>
+        <h3>🌕 Astra – Love Quote Pack</h3>
+        <div class="gumroad-embed">
+          <iframe 
+            src="https://genkuman.gumroad.com/l/love-quotes-pack-7?embedded=true" 
+            scrolling="no" 
+            allowtransparency="true">
+          </iframe>
+        </div>
+      </div>
 
-  </div>
-
-  <div>
-    <h3>🜁 Damo – Stillness Pack</h3>
-    <iframe 
-  src="https://genkuman.gumroad.com/l/damo-stillness-speaks?embedded=true" 
-  width="100%" 
-  height="420" 
-  frameborder="0" 
-  scrolling="no" 
-  allowtransparency="true">
-</iframe>
-
-  </div>
-</div>
-
-
-</div>
+      <div>
+        <h3>🜁 Damo – Stillness Pack</h3>
+        <div class="gumroad-embed">
+          <iframe 
+            src="https://genkuman.gumroad.com/l/damo-stillness-speaks?embedded=true" 
+            scrolling="no" 
+            allowtransparency="true">
+          </iframe>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>Created by GenKuman.AI</p>
