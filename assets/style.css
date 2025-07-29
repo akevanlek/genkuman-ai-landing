@@ -74,3 +74,41 @@
       font-size: 0.9rem;
       opacity: 0.6;
     }
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 880px;
+  margin: 1rem auto 2.5rem auto;
+  border-radius: 12px;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 32s linear infinite;
+}
+
+.carousel-track img {
+  height: auto;
+  width: 280px;
+  margin-right: 16px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.carousel-track img:hover {
+  transform: scale(1.06);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 600px) {
+  .carousel-track img {
+    width: 220px;
+    margin-right: 12px;
+  }
+}
+
