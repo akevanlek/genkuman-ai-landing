@@ -129,6 +129,22 @@ footer {
   background-color: #666;
 }
 
+.linktree-banner {
+  background: #111827;
+  color: #93c5fd;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  border: 1px solid #374151;
+}
+.linktree-banner a {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+
 
 /* เลื่อนแบบต่อเนื่องสำหรับ 6+ ภาพ */
 @keyframes scroll {
