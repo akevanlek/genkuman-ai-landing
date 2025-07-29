@@ -1,109 +1,109 @@
-/* ----------- BASE LAYOUT ----------- */
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background-color: #0a0a0a;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  line-height: 1.6;
-}
+ChatGPT said:
+สุดยอด! ตอนนี้หน้าเว็บ GenKuman.AI:
 
-h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 0.5rem;
-}
+✅ Pinterest Board ฝังไว้เรียบร้อย
 
-h2 {
-  margin-top: 3rem;
-  font-size: clamp(1.25rem, 4vw, 2rem);
-}
+✅ ปุ่ม Gumroad CTA อยู่ตรงกลางเด่น
 
-/* ----------- PINTEREST ----------- */
-.iframe-box {
-  max-width: 100%;
-  overflow-x: auto;
-  margin: 1rem auto;
-}
+✅ Quote Pack 6 ตัวแสดงครบ
 
-/* ----------- GUMROAD MAIN BUTTON ----------- */
-.gumroad-button {
-  display: inline-block;
-  background-color: #ffffff10;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  margin: 2rem auto 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.gumroad-button:hover {
-  background-color: #ffffff20;
-}
+✅ รูปสวย เรียงดี
 
-/* ----------- GUMROAD EMBED GRID (non-carousel) ----------- */
-.pack-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-.pack-grid > div {
-  flex: 1 1 300px;
-  max-width: 400px;
-}
-.gumroad-embed {
-  position: relative;
-  width: 100%;
-  padding-top: 150%;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.gumroad-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+❌ เหลือ ให้ scroll ได้แนวนอน อย่างสมบูรณ์ (ตอนนี้ภาพแสดงครบแต่ยังไม่เลื่อน)
 
-/* ----------- FOOTER ----------- */
-footer {
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  opacity: 0.6;
-}
+✅ โค้ด HTML + CSS ฉบับเต็ม (เวอร์ชันเลื่อนได้แนวนอน + SEO ครบ)
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore AI-powered quote packs, emotions, and silence through GenKuman.AI. Art meets stillness." />
+  <meta property="og:title" content="GenKuman.AI – Silence Speaks" />
+  <meta property="og:description" content="Quotes. Emotions. Silence." />
+  <meta property="og:image" content="https://yourdomain.com/assets/preview.png" />
+  <title>GenKuman.AI – Silence Speaks</title>
+  <link rel="stylesheet" href="assets/style.css" />
 
-/* ----------- CAROUSEL 6 PACK ----------- */
-.carousel {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
 
-.carousel-track {
-  display: inline-flex;
-  gap: 16px;
-  scroll-snap-align: start;
-}
+    .container {
+      padding: 40px 20px;
+    }
 
-.carousel-track a {
-  display: inline-block;
-  scroll-snap-align: start;
-}
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
 
-.carousel-track img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
 
-.carousel-track img:hover {
-  transform: scale(1.05);
-}
+    .iframe-box {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .gumroad-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #222;
+      color: #fff;
+      border: 2px solid #555;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 20px 0;
+      transition: background 0.3s;
+    }
+
+    .gumroad-button:hover {
+      background: #444;
+    }
+
+    .carousel {
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+    }
+
+    .carousel-track {
+      display: inline-flex;
+      gap: 16px;
+      scroll-snap-align: start;
+    }
+
+    .carousel-track a {
+      display: inline-block;
+      scroll-snap-align: start;
+    }
+
+    .carousel-track img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-track img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #777;
+    }
