@@ -114,6 +114,22 @@ footer {
   animation-play-state: paused;
 }
 
+.linktree-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.linktree-button:hover {
+  background-color: #666;
+}
+
+
 /* เลื่อนแบบต่อเนื่องสำหรับ 6+ ภาพ */
 @keyframes scroll {
   0%   { transform: translateX(0); }
