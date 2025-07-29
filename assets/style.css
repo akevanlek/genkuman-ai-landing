@@ -1,79 +1,114 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #111;
+      background: #0d0d0d;
       color: #fff;
       text-align: center;
+      scroll-behavior: smooth;
     }
 
     .container {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.8em;
+      margin-bottom: 0.4em;
     }
 
     h2 {
       margin-top: 60px;
-      margin-bottom: 20px;
+      font-size: 1.6em;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.1em;
+      margin-top: -10px;
     }
 
     .iframe-box {
+      margin: 30px auto;
       display: flex;
       justify-content: center;
-      margin: 20px auto;
     }
 
     .gumroad-button {
       display: inline-block;
-      padding: 12px 24px;
-      background: #222;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+      border: 1px solid #444;
       color: #fff;
-      border: 2px solid #555;
-      border-radius: 8px;
       text-decoration: none;
-      margin: 20px 0;
-      transition: background 0.3s;
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 24px auto;
+      transition: all 0.3s ease;
     }
 
     .gumroad-button:hover {
-      background: #444;
+      background: #333;
+      box-shadow: 0 0 8px #fff2, 0 0 20px #fff1;
     }
 
     .carousel {
       overflow-x: auto;
-      white-space: nowrap;
-      scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
-      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+      margin: 20px 0;
     }
 
     .carousel-track {
-      display: inline-flex;
+      display: flex;
       gap: 16px;
-      scroll-snap-align: start;
+      padding-bottom: 10px;
+      padding-left: 10px;
     }
 
     .carousel-track a {
       display: inline-block;
       scroll-snap-align: start;
+      text-decoration: none;
     }
 
     .carousel-track img {
-      max-width: 200px;
+      width: 200px;
       height: auto;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #000a;
     }
 
     .carousel-track img:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 12px #fff3, 0 0 18px #fff2;
     }
 
     footer {
       margin-top: 60px;
       font-size: 0.9em;
       color: #777;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .carousel-track {
+        gap: 12px;
+      }
+
+      .carousel-track img {
+        width: 160px;
+      }
+
+      .gumroad-button {
+        padding: 12px 20px;
+        font-size: 1em;
+      }
     }
